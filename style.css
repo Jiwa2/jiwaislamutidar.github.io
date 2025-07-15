@@ -1,0 +1,143 @@
+.navbar .nav-link {
+  transition: background-color 0.3s, box-shadow 0.3s;
+  border-radius: 8px;
+}
+
+.navbar .nav-link:hover {
+  background-color: rgb(69, 176, 230);
+  box-shadow: rgba(rgb(8, 164, 199), green, blue, alpha);
+  background-color: rgba(97, 97, 97, 0.8);
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8); /* glow lebih kuat saat diklik */
+  outline: none;
+}
+
+#about h1 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+#about h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+
+
+.glass-box {
+  transition: box-shadow 0.3s ease;
+  background: rgba(255, 0, 150, 0.1);
+
+}
+
+.glass-box:hover {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.8), 0 0 60px rgba(255, 255, 255, 0.5), 0 0 100px rgba(255, 255, 255, 0.3);
+
+
+}
+
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background-attachment: fixed;
+  color: #fff;
+}
+
+body {
+  background: radial-gradient(
+    circle at 20% 40%,
+    rgba(123, 91, 52, 0.967),
+    rgb(39, 39, 82) 50%
+  ),
+  radial-gradient(
+    circle at 80% 70%,
+    rgba(0, 102, 255, 0.2),
+    transparent 40%
+  ),
+  #0f172a; /* navy-dark base */
+  color: white;
+}
+
+.about-box {
+  max-width: 600px;
+  background: linear-gradient(to bottom right, #3f3f46, #1f1f2e);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body {
+  padding-top: 70px; /* kira-kira tinggi navbar kamu */
+}
+
+section {
+  scroll-margin-top: 80px; /* Sesuaikan dengan tinggi navbar kamu */
+}
+
+section {
+  scroll-margin-top: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  #hero .text-mobile-up {
+    margin-top: -100px;
+  }
+}
+
+.nav-link.active {
+  color: #2196f3 !important; /* Biru terang atau warna pilihanmu */
+  font-weight: bold;
+}
+
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.marquee-content {
+  display: flex;
+  width: fit-content;
+  animation: marquee-left 20s linear infinite;
+}
+
+.marquee-content.reverse {
+  animation: marquee-right 20s linear infinite;
+}
+
+.sertif-item {
+  width: 300px;
+  height: auto;
+  margin: 0 1rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Animasi ke kiri (default) */
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Animasi ke kanan */
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.mini-project-box {
+  width: 100%;
+  background: rgba(255,255,255,0.05);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  color: white;
+}
